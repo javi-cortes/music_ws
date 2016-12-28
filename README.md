@@ -21,7 +21,7 @@ add_song
 add_play
 ```javascript
   POST /add_play, data={title: 'song_name',
-                       performer: performer_name',
+                       performer: 'performer_name',
                        start: '2014-10-21T18:41:00',
                        end: '2014-10-21T18:44:00',
                        channel: 'channel_name'}
@@ -34,7 +34,7 @@ get_song_plays
 ```javascript
 GET /get_song_plays,
 data={title: 'song_name',
-    performer: performer_name',
+    performer: 'performer_name',
     start: '2014-10-21T00:00:00',
     end: '2014-10-28T00:00:00'}
 ```     
