@@ -4,7 +4,7 @@ Music webservice initial example to implement a song monitoring system. It allow
 The web service listens to a port, answers to GET / POST requests and return JSON dictionaries.
 (all strings are UTF-8 encoded and all dates are in UTC, in the ISO 8601 format)
 
- # Webservice Usage
+### WS Add Data
  
 add_channel
 ```javascript
@@ -26,9 +26,7 @@ add_play
                        end: '2014-10-21T18:44:00',
                        channel: 'channel_name'}
 ``` 
-
-To retrieve data use the following endpoints : 
-
+### WS Retrieve Data
 
 get_song_plays
 ```javascript
