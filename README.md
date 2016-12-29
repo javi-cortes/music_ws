@@ -15,7 +15,7 @@ music_ws uses a number of open source tools to work properly:
 * Install [Python 2.7](https://www.python.org/download/releases/2.7/)
 * Install [pip] (https://pip.pypa.io/en/stable/installing/)
 * Set up the [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) Once in the / of the project, create a virtualenv and run the following command in order to install all the dependencies :
-   ```sh
+   ```
    pip install -r requirements.txt
    ```
 * Install [MongoDB Server](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
