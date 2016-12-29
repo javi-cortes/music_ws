@@ -41,61 +41,43 @@ add_song
 ```
 add_play
 ```javascript
-  POST /add_play, data={title: 'song_name',
-                       performer: 'performer_name',
-                       start: '2014-10-21T18:41:00',
-                       end: '2014-10-21T18:44:00',
-                       channel: 'channel_name'}
+  POST /add_play, data={title: 'song_name', performer: 'performer_name', 
+      start: '2014-10-21T18:41:00', 
+      end: '2014-10-21T18:44:00', 
+      channel: 'channel_name'}
 ``` 
 ### WS Retrieve Data
 
 get_song_plays
 ```javascript
 GET /get_song_plays,
-data={title: 'song_name',
-    performer: 'performer_name',
-    start: '2014-10-21T00:00:00',
-    end: '2014-10-28T00:00:00'}
+data={title: 'song_name', performer: 'performer_name', start: '2014-10-21T00:00:00', end: '2014-10-28T00:00:00'}
 ```     
 Returns:
 ```javascript
-{result: [{channel: 'channel',
-    start: '2014-01-10T01:00:00',
-    end: '2014-01-10T01:03:00'],...],
-code: 0}
+{result: [{channel: 'channel', start: '2014-01-10T01:00:00', end: '2014-01-10T01:03:00'],...], code: 0}
 ```
 
 get_channel_plays
 ```javascript
 GET /get_channel_plays,
-data={start: '2014-10-21T00:00:00',
-    end: '2014-10-28T00:00:00',
-    channel: 'channel'}
+data={start: '2014-10-21T00:00:00', end: '2014-10-28T00:00:00', channel: 'channel'}
 ```
 Returns:
 ```javascript
-{result: [{performer: 'performer_name',
-    title: 'title',
-    start: '2014-10-21T00:00:00',
-    end: '2014-10-21T00:03:00'},...],
-    code: 0}
+{result: [{performer: 'performer_name', title: 'title', start: '2014-10-21T00:00:00', end: '2014-10-21T00:03:00'},...], code: 0}
 ```
 
 get_top
 ```javascript
 GET /get_top,
-data={channels: ['channel_name'],
-    start: '2014-10-21T00:00:00',
-    limit: 40}
+data={channels: ['channel_name'], start: '2014-10-21T00:00:00', limit: 40}
 ```
 
 Returns:
 ```javascript
-{result: [{performer: 'performer',
-    title: 'title',
-    plays: plays,
-    previous_plays: previous_plays,
-    rank: rank,
-    previous_rank: previous_rank], ...],
-    code: 0}
+{result: [{performer: 'performer', title: 'title', plays: plays, previous_plays: previous_plays, 
+   rank: rank,
+   previous_rank: previous_rank], ...],
+   code: 0}
 ```
